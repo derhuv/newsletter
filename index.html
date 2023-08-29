@@ -7,67 +7,67 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
-<main>
+  <main class="bg-Dark_Slate_Grey flex min-h-screen justify-center items-center ">
 
-  <!-- Sign-up form start -->
-
-  <section>
-    <h1>Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
+    <!-- Sign-up form start -->
     
-    <form action="">
+    <section class="hidden box-border flex justify-center items-center w-3/5  max-w-full bg-white p-5 rounded-3xl">
+      <section class="px-8 ">
+        
+        <h1 class="text-h1 text-Dark_Slate_Grey font-roboto_bold">Stay updated!</h1>
+        <p class="text-base text-Charcoal_Grey font-roboto_regular">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class=" list-inside py-4 text-base text-Charcoal_Grey font-roboto_regular list-image-[url(../images/icon-list.svg)]">
+          <li class="pb-2">Product discovery and building what matters</li>
+          <li class="pb-2">Measuring to ensure updates are a success</li>
+          <li class="pb-2">And much more!</li>
+        </ul>
+        
+        <form class="" action="">
+          <div class="py-2">
+            <label class="font-roboto_bold text-sm text-Dark_Slate_Grey" for="email">Email address</label>
+          </div>
+          <div class="mb-5">
+            <input class="font-roboto_regular w-full rounded-lg py-3 px-5 border border-Real_Grey " type="email" name="email" id="email" placeholder="email@company.com">
+          </div>
+          <button class="font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+
+      </section>
+
+      <section class="">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </section>
+      
+    </section>
+    
+
+    <!-- Sign-up form end -->
+
+
+    <!-- Success message start -->
+    <section class="box-border flex justify-center items-center w-96 h-96  max-w-full bg-white p-8 rounded-3xl" >
       <div>
-        <label for="email">Email address</label>
+        <img class="h-14 w-14" src="./assets/images/icon-success.svg" alt="">
+        <h1 class="text-5xl text-Dark_Slate_Grey font-roboto_bold my-5">Thanks for subscribing!</h1>
+        <p class="text-sm text-Charcoal_Grey font-roboto_regular">A confirmation email has been sent to <span class="font-roboto_bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
+        <button class=" mt-5 font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey">Dismiss message</button>
       </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="email@company.com">
-      </div>
-      <button type="submit">Subscribe to monthly newsletter</button>
-    </form>
+      
+    </section>
+    <!-- Success message end -->
+    
+  </main>
 
-  </section>
 
-  <section>
-    <img src="" alt="">
-  </section>
 
-  <!-- Sign-up form end -->
-  
-</main>
-
-<!-- Success message start -->
-  <section>
-    <img src="" alt="">
-    <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription. </p>
-    <button>Dismiss message</button>
-  </section>
-<!-- Success message end -->
-  
-
-  
-  
-
-  
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/derhuv">Derhuv</a>.
-  </div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/derhuv">Derhuv</a>.
+</div>
 </body>
 </html>
