@@ -163,6 +163,8 @@ module.exports = {
       Dark_Slate_Grey: "hsl(234, 29%, 20%)",
       Charcoal_Grey: "hsl(235, 18%, 26%)",
       Real_Grey: "hsl(231, 7%, 60%)",
+      Error: "#FF5757",
+      link: "hsl(228, 45%, 44%)",
     }),
     columns: {
       auto: 'auto',
@@ -349,7 +351,7 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
-      'h1' : ['55px'],
+      tiny: ['11px'],
     },
     fontWeight: {
       thin: '100',
@@ -787,7 +789,6 @@ module.exports = {
       150: '1.5',
     },
     screens: {
-      xs: '426px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -979,6 +980,7 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
+      '800':'800px',
     }),
     willChange: {
       auto: 'auto',

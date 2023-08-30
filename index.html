@@ -12,37 +12,51 @@
   
 </head>
 <body>
-  <main class="xs:bg-Dark_Slate_Grey flex min-h-screen justify-center items-center ">
+  <main class="sm:bg-Dark_Slate_Grey sm:flex-col flex min-h-screen justify-center sm:items-center ">
 
     <!-- Sign-up form start -->
     
-    <section class=" box-border flex justify-center items-center w-3/5  max-w-full bg-white p-5 rounded-3xl">
-      <section class="px-8 ">
-        
-        <h1 class="text-h1 text-Dark_Slate_Grey font-roboto_bold">Stay updated!</h1>
-        <p class="text-base text-Charcoal_Grey font-roboto_regular">Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class=" list-inside py-4 text-base text-Charcoal_Grey font-roboto_regular list-image-[url(../images/icon-list.svg)]">
-          <li class="pb-2">Product discovery and building what matters</li>
-          <li class="pb-2">Measuring to ensure updates are a success</li>
-          <li class="pb-2">And much more!</li>
-        </ul>
-        
-        <form class="" action="">
-          <div class="py-2">
-            <label class="font-roboto_bold text-sm text-Dark_Slate_Grey" for="email">Email address</label>
-          </div>
-          <div class="mb-5">
-            <input class="font-roboto_regular w-full rounded-lg py-3 px-5 border border-Real_Grey " type="email" name="email" id="email" placeholder="email@company.com">
-          </div>
-          <button class="font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato" type="submit">Subscribe to monthly newsletter</button>
-        </form>
+    <section class="bg-white sm:p-5 rounded-3xl w-800 max-w-full">
 
-      </section>
+      <div class="box-border sm:flex sm:flex-row flex flex-col-reverse justify-center items-center ">
 
-      <section class="">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
-      </section>
-      
+        <div class="sm:ps-8 sm:pe-12 px-5 sm:mt-0 mt-8">
+          
+          <h1 class="md:text-5xl text-4xl text-Dark_Slate_Grey font-roboto_bold">Stay updated!</h1>
+          <p class="md:pt-6 pt-4 md:text-base text-sm text-Charcoal_Grey font-roboto_regular">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class=" list-inside py-4 md:text-base text-sm text-Charcoal_Grey font-roboto_regular list-image-[url(../images/icon-list.svg)]">
+            <li class="pb-2">Product discovery and building what matters</li>
+            <li class="pb-2">Measuring to ensure updates are a success</li>
+            <li class="pb-2">And much more!</li>
+          </ul>
+          
+          <form class="" action="">
+            <div class="flex justify-between py-2">
+              <label class="font-roboto_bold text-sm text-Dark_Slate_Grey" for="email">Email address</label>
+              <small class="font-roboto_bold text-Error"></small>
+            </div>
+            <div class="mb-5">
+              <input class="font-roboto_regular w-full rounded-lg py-3 px-5 border border-Real_Grey focus:outline-none focus:border-Charcoal_Grey focus:ring-0.5 focus:ring-Charcoal_Grey invalid:border-Error invalid:text-Error
+              focus:invalid:border-Error focus:invalid:ring-Error" type="email" name="email" id="email" placeholder="email@company.com">
+            </div>
+            <button class="font-roboto_regular text-sm text-white p-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato" type="submit">Subscribe to monthly newsletter</button>
+          </form>
+
+        </div>
+
+        <div class="">
+
+          <img class="sm:flex hidden" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+          <img class="sm:hidden" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+
+        </div>
+
+      </div>
+
+      <div class="static w-full text-center text-tiny pt-3 sm:px-0 px-8">
+        Challenge by <a class="text-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="text-link" href="https://github.com/derhuv">Derhuv</a>.
+      </div>
     </section>
     
     <!-- Sign-up form end -->
@@ -50,17 +64,17 @@
 
     <!-- Success message start -->
 
-    <section class="hidden box-border relative flex justify-center xs:items-center w-96 xs:h-96 h-screen max-w-full bg-white p-8 rounded-3xl" >
-      <div class="xs:mt-0 mt-20 ">
+    <section class="hidden box-border relative flex justify-center sm:items-center w-96 sm:h-96 h-screen max-w-full bg-white p-8 rounded-3xl" >
+      <div class="sm:mt-0 mt-20 ">
         <img class="h-14 w-14" src="./assets/images/icon-success.svg" alt="">
         <h1 class="text-4xl text-Dark_Slate_Grey font-roboto_bold my-5">Thanks for subscribing!</h1>
-        <p class="text-xs text-Charcoal_Grey font-roboto_regular">A confirmation email has been sent to <span class="font-roboto_bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
-        <div class="xs:static absolute bottom-8 left-0 w-full xs:px-0 px-8">
-          <button class="xs:mt-5 font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato">Dismiss message</button>
+        <p class="text-sm text-Charcoal_Grey font-roboto_regular">A confirmation email has been sent to <span class="font-roboto_bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
+        <div class="sm:static absolute bottom-8 left-0 w-full sm:px-0 px-8">
+          <button class="sm:mt-5 font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato">Dismiss message</button>
         </div>
-        <div class="xs:static w-full absolute bottom-0 left-0 attribution pt-3 xs:px-0 px-8">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://github.com/derhuv">Derhuv</a>.
+        <div class="sm:static w-full absolute bottom-0 left-0 text-center text-tiny pt-3 sm:px-0 px-8">
+          Challenge by <a class="text-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a class="text-link" href="https://github.com/derhuv">Derhuv</a>.
         </div>
        </div>
       
