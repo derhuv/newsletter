@@ -12,11 +12,11 @@
   
 </head>
 <body>
-  <main class="bg-Dark_Slate_Grey flex min-h-screen justify-center items-center ">
+  <main class="xs:bg-Dark_Slate_Grey flex min-h-screen justify-center items-center ">
 
     <!-- Sign-up form start -->
     
-    <section class="hidden box-border flex justify-center items-center w-3/5  max-w-full bg-white p-5 rounded-3xl">
+    <section class=" box-border flex justify-center items-center w-3/5  max-w-full bg-white p-5 rounded-3xl">
       <section class="px-8 ">
         
         <h1 class="text-h1 text-Dark_Slate_Grey font-roboto_bold">Stay updated!</h1>
@@ -34,7 +34,7 @@
           <div class="mb-5">
             <input class="font-roboto_regular w-full rounded-lg py-3 px-5 border border-Real_Grey " type="email" name="email" id="email" placeholder="email@company.com">
           </div>
-          <button class="font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey" type="submit">Subscribe to monthly newsletter</button>
+          <button class="font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato" type="submit">Subscribe to monthly newsletter</button>
         </form>
 
       </section>
@@ -45,29 +45,31 @@
       
     </section>
     
-
     <!-- Sign-up form end -->
 
 
     <!-- Success message start -->
-    <section class="box-border flex justify-center items-center w-96 h-96  max-w-full bg-white p-8 rounded-3xl" >
-      <div>
+
+    <section class="hidden box-border relative flex justify-center xs:items-center w-96 xs:h-96 h-screen max-w-full bg-white p-8 rounded-3xl" >
+      <div class="xs:mt-0 mt-20 ">
         <img class="h-14 w-14" src="./assets/images/icon-success.svg" alt="">
-        <h1 class="text-5xl text-Dark_Slate_Grey font-roboto_bold my-5">Thanks for subscribing!</h1>
-        <p class="text-sm text-Charcoal_Grey font-roboto_regular">A confirmation email has been sent to <span class="font-roboto_bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
-        <button class=" mt-5 font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey">Dismiss message</button>
-      </div>
+        <h1 class="text-4xl text-Dark_Slate_Grey font-roboto_bold my-5">Thanks for subscribing!</h1>
+        <p class="text-xs text-Charcoal_Grey font-roboto_regular">A confirmation email has been sent to <span class="font-roboto_bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription. </p>
+        <div class="xs:static absolute bottom-8 left-0 w-full xs:px-0 px-8">
+          <button class="xs:mt-5 font-roboto_regular text-white py-3 w-full rounded-lg bg-Dark_Slate_Grey hover:bg-Tomato focus:bg-Tomato">Dismiss message</button>
+        </div>
+        <div class="xs:static w-full absolute bottom-0 left-0 attribution pt-3 xs:px-0 px-8">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/derhuv">Derhuv</a>.
+        </div>
+       </div>
       
     </section>
+
     <!-- Success message end -->
     
+    
+    
   </main>
-
-
-
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="https://github.com/derhuv">Derhuv</a>.
-</div>
 </body>
 </html>
