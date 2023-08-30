@@ -716,10 +716,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -849,10 +845,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .max-w-full {
@@ -1937,16 +1929,12 @@ video {
      object-fit: scale-down;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-5 {
@@ -1982,45 +1970,8 @@ video {
   padding-top: 0.75rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pe-8 {
-  -webkit-padding-end: 2rem;
-          padding-inline-end: 2rem;
-}
-
-.ps-4 {
-  -webkit-padding-start: 1rem;
-          padding-inline-start: 1rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pe-12 {
-  -webkit-padding-end: 3rem;
-          padding-inline-end: 3rem;
-}
-
-.ps-8 {
-  -webkit-padding-start: 2rem;
-          padding-inline-start: 2rem;
-}
-
-.pe-4 {
-  -webkit-padding-end: 1rem;
-          padding-inline-end: 1rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .text-left {
@@ -2092,16 +2043,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2109,16 +2050,6 @@ video {
 
 .text-tiny {
   font-size: 11px;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -2678,8 +2609,9 @@ video {
     height: 24rem;
   }
 
-  .sm\:w-800 {
-    width: 800px;
+  .sm\:w-max {
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .sm\:flex-row {
@@ -2718,30 +2650,12 @@ video {
             padding-inline-start: 2rem;
   }
 
-  .sm\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:pe-12 {
-    -webkit-padding-end: 3rem;
-            padding-inline-end: 3rem;
-  }
-
-  .md\:ps-8 {
-    -webkit-padding-start: 2rem;
-            padding-inline-start: 2rem;
-  }
-
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
