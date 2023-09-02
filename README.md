@@ -33,8 +33,11 @@ Users should be able to:
 ### Screenshot
 
 [desktop view of form](./design/desktopview-form.png)
+
 [desktop view of form](./design/desktopview-success.png)
+
 [desktop view of form](./design/mobileview-form.png)
+
 [desktop view of form](./design/mobileview-success.png)
 
 
