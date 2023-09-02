@@ -1,5 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
+
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -32,13 +33,14 @@ Users should be able to:
 
 ### Screenshot
 
-[desktop view of form](./design/desktopview-form.png)
+![desktop view of form](./design/desktopview-form.png)
 
-[desktop view of form](./design/desktopview-success.png)
 
-[desktop view of form](./design/mobileview-form.png)
+![desktop view of success message](./design/desktopview-success.png)
 
-[desktop view of form](./design/mobileview-success.png)
+![mobile view of form](./design/mobileview-form.png)
+
+![mobile view of success message](./design/mobileview-success.png)
 
 
 ### Links
